@@ -1,0 +1,30 @@
+# Ignore Terraform files
+.terraform/
+
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore AWS credentials file
+credentials
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore environment configuration files
+.env
+
+# Ignore local development files
+*.log
+*.swp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+config.py
+
