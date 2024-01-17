@@ -1,5 +1,6 @@
 import psycopg2
 from datetime import datetime
+import os
 
 from flask import Flask, request, jsonify
 from psycopg2.extras import DictCursor
@@ -12,9 +13,10 @@ def get_db_conn(db_config):
     """ Create a database connection. """
     return psycopg2.connect(
         "dbname='{}' user='{}' host='{}'".format(
-            db_config["name"],
-            db_config["user"],
-            db_config["host"]
+            os.environ.get("name"),
+            os.environ.get("user"),
+            os.environ.get("host"),
+            os.environ.get("password")
         )
     )
 

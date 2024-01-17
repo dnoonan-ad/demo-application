@@ -27,4 +27,6 @@ __pycache__/
 Thumbs.db
 
 config.py
-
+provider.tf
+.terraform
+.terraform.lock.hcl
